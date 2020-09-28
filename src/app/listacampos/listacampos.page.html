@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-text class="text-center">
+      Ensayos Comparativos de Rendimiento (ECR)
+    </ion-text>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list >
+    <ion-item *ngFor="let ens of listaensayos" [routerLink]="['/listacampos', ens.id]">
+      <ion-avatar slot="start" class="avatar-lista">
+        <img src="../../assets/field.png">
+       </ion-avatar>
+       <ion-label class="text-lista">{{ens.rs}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="nuevo()" class="boton" expand= "block" shape="round" size="small" color="light">
+    Agregar ensayo
+    <ion-icon slot="end" name="add-outline"></ion-icon>
+  </ion-button>
+
+</ion-content >

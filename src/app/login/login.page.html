@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Log In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item lines="full">
+      <ion-label position="floating">E-mail</ion-label>
+     <ion-input [(ngModel)]="correo" type="email" ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="contrasenia" type="password" ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Repetir Contraseña</ion-label>
+      <ion-input [(ngModel)]="rcontrasenia" type="password" ></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="guardar()" type="submit" class="boton" color="success" expand="block">Sign In
+          <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon> </ion-button>
+      </ion-col>
+    </ion-row>
+
+ 
+</ion-content>

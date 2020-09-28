@@ -1,0 +1,41 @@
+#container {
+  text-align: center;
+position: relative;
+width: 90%;
+height: 45%;
+  left: 0;
+  top: 23%;
+  transform: translateY(-50%);
+}
+
+
+.avatar{
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    width: 45px;
+    height: 45px;
+    }
+
+    .text-center {
+        font-size: 16px;
+        margin-left: 1%;
+        color:forestgreen;
+        font-weight: bold;
+        font-variant: small-caps;
+        font-family: Verdana;
+      }
+      
+     .back{
+         color: forestgreen;
+     }
+
+     .text-lista{
+        font-family: Arial;
+        color:dimgray;
+        font-size: 13px;
+        padding: 1px;
+           }
+           
+
+   

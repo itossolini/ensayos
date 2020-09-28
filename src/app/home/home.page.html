@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title-center">
+      Inicio ECR App
+    </ion-title>
+    <ion-avatar slot="start" class="avatar">
+      <img src="../../assets/avatar.png" />
+     </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button class="boton" [routerLink]="['/registration']" expand="block" color="primary">Registrarse</ion-button>
+
+        <span class="divider line one-line">o</span>
+
+        <span class="already">Ya es usuario?</span>
+
+        <ion-button class="boton" [routerLink]="['/login']" expand="block" color="success">Sign In<ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon> 
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
